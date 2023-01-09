@@ -51,27 +51,28 @@ textarea
 {
     position: relative;
     border: 2px solid rgb(250, 73, 73); 
-    padding:  20px 70px;
+    padding:  18px 75px;
     border-radius: 5px;
-    right: 10%;
+    right: 6%;
     display: flex;
     cursor: pointer;
+    align-items: center;
 }
 .content .heart{
-    height: 50px;
-    width: 65px;
+    height: 60px;
+    width: 90px;
     background: url(/Proyecto-LM/img/img.jpg) no-repeat;
     background-position: left ;
     background-size: 2900%;
     position: absolute;
     top: 50%;
-    left: 22%;
+    left: 20%;
     transform: translate(-50%,-50%);
 }
 .content:hover
 {
     background-position: right;
-    animation: animate .8s steps(28) 1;
+    animation: animate 0.8s steps(28) 1;
 }
 @keyframes animate {
     0%{
@@ -84,10 +85,10 @@ textarea
 }
 .like
 {
-    margin-left: 30px;
-    font-size: 20px;
+    margin-left: 20px;
+    font-size: 25px;
     font-family:'Montserrat',sans-serif;
-    color:rgb(196, 196, 196);
+    color:rgb(185, 115, 115);
 }
 .numb:before{
     content: '12';
@@ -188,7 +189,7 @@ form
     margin: 30px auto;
     height: 480px;
     width: 100%;
-    background-color: azure;
+    background-color: rgb(255, 255, 255);
     justify-content: center;
     display: flex;
 }
