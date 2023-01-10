@@ -118,21 +118,26 @@ input{
     height: 270px;
     margin: 10px;    
     flex-direction: column; 
-    background-color: cornflowerblue;  
+    background-color: rgb(13, 94, 245);  
     border-radius: 1px; 
 }
 .contenedor
 {
-    margin: 15px;
+    margin: 120px;
+    transform: scale(1.5);
+
+
 }
 .publicador
 {
    text-align: right;
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
 a
 {
     text-decoration: none;
+    color: white;
 }
 .cajalogo
 {
@@ -146,7 +151,14 @@ header
     background-color: rgba(0, 0, 0, 0.849); 
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
+}
+.Nombreweb
+{
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-right: 10px;
 }
 .logo
 {
@@ -165,6 +177,7 @@ img
     height: 200px;
     width: 240px;
     transition: transform 2s;
+    border-radius: 5px;
     
 }
 img:hover
@@ -172,11 +185,12 @@ img:hover
     transform: scale(1.1) translate(5px, -20px);
     
     
+    
 }
 main
 {
     position: static;
-    min-height: 60vh;     
+    min-height: 60%;     
 }
 footer
 {
@@ -187,9 +201,11 @@ form
 {
     position: relative;
     margin: 30px auto;
-    height: 480px;
+    min-height: 480px;
     width: 100%;
     background-color: rgb(255, 255, 255);
-    justify-content: center;
+   
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
