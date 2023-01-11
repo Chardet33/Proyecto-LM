@@ -112,6 +112,9 @@ input{
 }
 .caja1
 {    
+    
+    /*Igual esto te gusta. Poniendo esta propiedad a la caja que pones la imagen, haces un efecto de zoom sobre la imagen*/
+        overflow: hidden;
     display: flex;
     outline: 1px black solid;
     width: 240px;
@@ -190,18 +193,17 @@ img:hover
 main
 {
     position: static;
-    min-height: 60%;     
+    min-height: 60vh;     
 }
 footer
 {
     min-height: 20vh;
     background-color: rgba(0, 0, 0, 0.847);
 }
-form
+section
 {
-    position: relative;
     margin: 30px auto;
-    min-height: 480px;
+    min-height: 60vh;
     width: 100%;
     background-color: rgb(255, 255, 255);
    
