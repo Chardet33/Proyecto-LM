@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChattingFriends</title>
     <link rel="stylesheet" href="/Proyecto-LM/css/publicaciones.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 
 <body>
@@ -20,7 +21,7 @@
                     <p>Lorem ipsum dolor sit amet consectetur.</p><a href="#">
                         <p class="publicador">Lucas Terán</p>
                     </a>
-                </div>
+                </div> 
                 <div class="heart-btn">
                     <div class="content">
                         <span class="heart"></span>
@@ -29,7 +30,18 @@
                         <span class="comment"></span>
                     </div>
                 </div>
+                <script>
+                    $(document).ready(function(){
+                        $(".content").click(function(){
+                            $(".content").toggleClass("heart-active")
+                            $(".like").toggleClass("heart-active")
+                            $(".heart").toggleClass("heart-active")
+                            $(".numb").toggleClass("heart-active")
+                        });
+                    });
+                </script>                
             </div>
+           
             <div class="contenedor">
                 <div class="caja1"><img src="/Proyecto-LM/img/2.jpg">
                     <p>Lorem ipsum dolor sit amet consectetur.</p><a href="#">
@@ -95,9 +107,6 @@
         </form>
 
     </main>
-    <footer>
-
-    </footer>
 </body>
 
 </html>

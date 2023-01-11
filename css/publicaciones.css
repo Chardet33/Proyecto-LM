@@ -20,14 +20,7 @@ body
     opacity: 0;
 
 }
-.heart-btn
-{
-    position: absolute;
-    transform: translate(10%,-15%);
-    
-    
-    
-}
+
 .comment
 {
     position:absolute;
@@ -35,41 +28,50 @@ body
     height: 90px;
     width: 90px;
     background-size: 60%;
-    top: 0;
+    margin-left: 8px;
+    top: 0%;
     left: 75%;
     opacity: 0.6;
-}
-.comment:focus 
-{
-    opacity: 0.7;
 }
 textarea
 {
     position: absolute;
 }
+.heart-btn
+{
+    position: absolute;
+    transform: translate(5%,-14%) scale(.9);
+    display: flex;
+    height: 20%;
+   
+    
+}
 .content
 {
     position: relative;
-    border: 2px solid rgb(250, 73, 73); 
-    padding:  18px 75px;
+    border: 2px solid #eae2e1; 
+    padding:  13px 60px;
     border-radius: 5px;
-    right: 6%;
+    right: 7px;
     display: flex;
     cursor: pointer;
     align-items: center;
+    
 }
 .content .heart{
-    height: 60px;
+    z-index: -1;
+    height: 90px;
     width: 90px;
     background: url(/Proyecto-LM/img/img.jpg) no-repeat;
     background-position: left ;
     background-size: 2900%;
     position: absolute;
     top: 50%;
-    left: 20%;
-    transform: translate(-50%,-50%);
+    left: 19%;
+    transform: translate(-50%, -53%);
+    
 }
-.content:hover
+.heart.heart-active
 {
     background-position: right;
     animation: animate 0.8s steps(28) 1;
@@ -80,15 +82,17 @@ textarea
     }
     100%{
         background-position: right;
-    }
-    
+    }    
 }
 .like
 {
-    margin-left: 20px;
-    font-size: 25px;
+    margin-left: 40px;
+    font-size: 22px;
     font-family:'Montserrat',sans-serif;
-    color:rgb(185, 115, 115);
+    color:grey;
+}
+.like.heart-active{
+    color: black;
 }
 .numb:before{
     content: '12';
@@ -96,10 +100,13 @@ textarea
     font-weight: 600;
     font-family: sans-serif;
     color: #9C9496;
-    margin-left: 7px;
+    margin-left: 8px;
 }
-
-
+.numb.heart-active:before
+{
+    content: '13';
+    color: black;
+}
 input{
     position: relative;
     left: 30px;
@@ -112,21 +119,23 @@ input{
 }
 .caja1
 {    
-    display: flex;
-    outline: 1px black solid;
+    z-index: 20;
+    display: flex;    
     width: 240px;
     height: 270px;
-    margin: 10px;    
+    margin: 10px; 
+    margin:21px;   
     flex-direction: column; 
-    background-color: rgb(13, 94, 245);  
-    border-radius: 1px; 
+    background-color: rgb(38, 134, 24);  
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px; 
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 .contenedor
 {
-    margin: 120px;
-    transform: scale(1.5);
-
-
+    margin: 130px;
+    transform: scale(1.3);
 }
 .publicador
 {
@@ -163,8 +172,9 @@ header
 .logo
 {
     display: block;
-    height: 100px;
-    width: 100px;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
 }
 p
 {
@@ -183,9 +193,7 @@ img
 img:hover
 {
     transform: scale(1.1) translate(5px, -20px);
-    
-    
-    
+       
 }
 main
 {
@@ -201,11 +209,12 @@ form
 {
     position: relative;
     margin: 30px auto;
-    min-height: 480px;
+    min-height: auto;
     width: 100%;
     background-color: rgb(255, 255, 255);
    
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
